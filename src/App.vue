@@ -41,7 +41,7 @@ export default {
 .divider {
   margin: 30px auto;
   width: 50%;
-  background-color: #bebebe;
+  background-color: mintcream;
   border: none;
   border-radius: 3px;
   height: 5px;

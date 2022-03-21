@@ -1,5 +1,5 @@
 <template>
-  <div :class="typeof weather.main != 'undefined' && weather.main.temp > 16 ? 'warm' : ''">
+  <div :class="typeof weather.main != 'undefined' && weather.main.temp > 16 ? 'warm' : 'cold'">
     <main>
       <div class="search-box">
         <input
@@ -16,8 +16,8 @@
           <div class="date">{{ dateBuilder() }}</div>
         </div>
         <div class="weather-box">
-          <div class="temp">{{ Math.round(weather.main.temp) }} Celium</div>
-          <div class="weather">{{ weather.weather[0].main }} Celium</div>
+          <div class="temp">{{ Math.round(weather.main.temp) }} °C</div>
+          <div class="weather">{{ weather.weather[0].main }}</div>
         </div>
       </div>
     </main>
@@ -69,6 +69,7 @@ export default {
   margin-top: 15px;
   border: none;
   border-radius: 10px;
+  background: mintcream;
 }
 
 .search-bar:focus {
@@ -79,5 +80,43 @@ export default {
   background: lightcoral;
   border-radius: 30px;
   height: 100%;
+}
+
+.cold .location {
+  text-shadow: 2px 2px lightcoral;
+}
+
+.cold .weather-box {
+  text-shadow: 4px 4px lightblue;
+
+}
+
+.location {
+  font-size: 35px;
+  color: mintcream;
+  text-shadow: 2px 2px lightblue;
+}
+
+.date {
+  font-size: 16px;
+  color: mintcream;
+}
+
+.weather-box {
+  background: rgba(255, 255, 255, 0.5);
+  margin: 15px 5%;
+  border-radius: 5px;
+  text-shadow: 4px 4px lightcoral;
+}
+
+.temp {
+  font-size: 70px;
+  color: mintcream;
+
+}
+
+.weather {
+  font-size: 55px;
+  color: mintcream;
 }
 </style>
