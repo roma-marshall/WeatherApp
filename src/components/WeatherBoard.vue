@@ -74,4 +74,10 @@ export default {
 .search-bar:focus {
   outline: none;
 }
+
+.warm {
+  background: lightcoral;
+  border-radius: 30px;
+  height: 100%;
+}
 </style>

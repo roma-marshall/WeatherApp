@@ -17,6 +17,7 @@ export default {
 </script>
 
 <style scoped>
+@import 'https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap';
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +25,8 @@ export default {
 }
 
 .app {
+  font-size: 22px;
+  font-family: 'Nunito', serif;
   text-align: center;
   background: lightblue;
   height: 700px;
