@@ -49,8 +49,7 @@ export default {
     dateBuilder() {
       let d = new Date();
       let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-      let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-
+      let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
       let day = days[d.getDay()];
       let date = d.getDate();
       let month = months[d.getMonth()];
@@ -70,6 +69,7 @@ export default {
   border: none;
   border-radius: 10px;
   background: mintcream;
+  color: lightslategrey;
 }
 
 .search-bar:focus {
@@ -87,7 +87,7 @@ export default {
 }
 
 .cold .location {
-  text-shadow: 2px 2px lightcoral;
+  text-shadow: 2px 2px lightslategrey;
 }
 
 .cold .weather-box {
@@ -97,7 +97,7 @@ export default {
 .location {
   font-size: 35px;
   color: mintcream;
-  text-shadow: 2px 2px lightblue;
+  text-shadow: 2px 2px lightslategrey;
 }
 
 .weather-box {

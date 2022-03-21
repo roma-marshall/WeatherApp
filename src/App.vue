@@ -1,7 +1,7 @@
 <template>
   <div class="app">
-    <WeatherBoard />
-    <hr class="divider" />
+    <WeatherBoard/>
+    <hr class="divider"/>
   </div>
 </template>
 
@@ -18,6 +18,7 @@ export default {
 
 <style scoped>
 @import 'https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap';
+
 * {
   margin: 0;
   padding: 0;
