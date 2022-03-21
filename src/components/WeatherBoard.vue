@@ -76,6 +76,10 @@ export default {
   outline: none;
 }
 
+.weather-wrap {
+  margin-top: 50px;
+}
+
 .warm {
   background: lightcoral;
   border-radius: 30px;
@@ -88,7 +92,6 @@ export default {
 
 .cold .weather-box {
   text-shadow: 4px 4px lightblue;
-
 }
 
 .location {
@@ -97,22 +100,24 @@ export default {
   text-shadow: 2px 2px lightblue;
 }
 
-.date {
-  font-size: 16px;
-  color: mintcream;
-}
-
 .weather-box {
   background: rgba(255, 255, 255, 0.5);
   margin: 15px 5%;
   border-radius: 5px;
   text-shadow: 4px 4px lightcoral;
+  margin-top: 30px;
+}
+
+.date {
+  font-size: 16px;
+  color: mintcream;
+  text-decoration: underline;
+  margin-top: 10px;
 }
 
 .temp {
   font-size: 70px;
   color: mintcream;
-
 }
 
 .weather {
