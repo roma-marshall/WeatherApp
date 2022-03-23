@@ -8,6 +8,7 @@
             placeholder="Search"
             v-model="query"
             @keypress="fetchWeather"
+            v-focus
         />
       </div>
       <div class="weather-wrap" v-if="typeof weather.main != 'undefined'">
